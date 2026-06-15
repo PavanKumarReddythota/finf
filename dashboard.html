@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayEasy Bangalore | Dashboard</title>
+    <meta name="description" content="Access your StayEasy dashboard to manage bookings, review stays, and monitor upcoming move-ins.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Stay<span>Easy</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="listings.html">Listings</a>
+                <a href="property.html">Property</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <button id="mobile-toggle" class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="property.html">Property</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="page-header reveal">
+                    <span class="eyebrow">My dashboard</span>
+                    <h1>Manage your bookings and listings from one place.</h1>
+                    <p>Check upcoming stays, view current bookings, and track your payments with StayEasy.</p>
+                </div>
+
+                <div class="dashboard-grid reveal">
+                    <article class="summary-card solid-card">
+                        <h3>Upcoming stays</h3>
+                        <p>2 confirmed stays in Koramangala and Whitefield with inspection dates scheduled.</p>
+                    </article>
+                    <article class="summary-card solid-card">
+                        <h3>Pending payments</h3>
+                        <p>₹6,500 due for your room booking in HSR Layout next week.</p>
+                    </article>
+                    <article class="summary-card solid-card">
+                        <h3>Saved rooms</h3>
+                        <p>3 rooms saved for quick review when you’re ready to book.</p>
+                    </article>
+                </div>
+
+                <div class="listing-card-small solid-card reveal">
+                    <h4>Koramangala PG - Single room</h4>
+                    <p>Move-in: 2 Jul 2026 · Rent: ₹9,500 · Deposit: ₹9,500</p>
+                    <button class="btn btn-secondary card-toggle">View updates</button>
+                </div>
+                <div class="listing-card-small solid-card reveal">
+                    <h4>Whitefield Shared Hostel</h4>
+                    <p>Move-in: 12 Jul 2026 · Rent: ₹7,200 · Meals included</p>
+                    <button class="btn btn-secondary card-toggle">View updates</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo footer-logo">Stay<span>Easy</span></a>
+                <p>Find verified rooms, trusted hosts, and flexible stays across Bangalore.</p>
+            </div>
+            <div class="footer-links">
+                <a href="listings.html">Listings</a>
+                <a href="property.html">Property</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fa-solid fa-phone"></i> +91 6300837092</p>
+                <p><i class="fa-solid fa-envelope"></i> support@stayeasy.in</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StayEasy Bangalore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayEasy Bangalore | Listings</title>
+    <meta name="description" content="Browse verified PG, hostel, and rental listings in Bangalore with StayEasy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="listings">
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Stay<span>Easy</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="listings.html" class="active">Listings</a>
+                <a href="property.html">Property</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <button id="mobile-toggle" class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="property.html">Property</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="page-header reveal">
+                    <span class="eyebrow">Browse rooms</span>
+                    <h1>Find the best PG, hostel, and apartment options in Bangalore.</h1>
+                    <p>Use search filters to explore verified listings with transparent pricing and easy booking.</p>
+                </div>
+                <div class="filter-panel reveal">
+                    <form id="listSearchForm" class="filter-panel">
+                        <div class="filter-group">
+                            <label for="filterCity">City</label>
+                            <select id="filterCity" name="city">
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Mysore">Mysore</option>
+                                <option value="Chennai">Chennai</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="filterBudget">Budget</label>
+                            <select id="filterBudget" name="budget">
+                                <option value="Any">Any</option>
+                                <option value="8000">Up to ₹8,000</option>
+                                <option value="12000">Up to ₹12,000</option>
+                                <option value="15000">Up to ₹15,000</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="filterType">Stay type</label>
+                            <select id="filterType" name="type">
+                                <option value="All">All</option>
+                                <option value="PG">PG</option>
+                                <option value="Hostel">Hostel</option>
+                                <option value="Apartment">Apartment</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="filterRooms">Room type</label>
+                            <select id="filterRooms" name="rooms">
+                                <option value="Any">Any</option>
+                                <option value="Single">Single</option>
+                                <option value="Shared">Shared</option>
+                                <option value="Studio">Studio</option>
+                            </select>
+                        </div>
+                        <div class="filter-actions">
+                            <button type="submit" class="btn btn-primary">Apply Filters</button>
+                            <button type="button" id="resetFilters" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="listing-grid reveal">
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="PG" data-budget="9500" data-rooms="Single">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt="PG room in Bangalore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>Koramangala</span></div>
+                            <h3>Cozy Single Room near HSR Layout</h3>
+                            <p>₹9,500 / month · Wi-Fi, Attached Bathroom, Laundry, Security</p>
+                            <div class="listing-footer">
+                                <a href="property.html" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹9,500</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Hostel" data-budget="7200" data-rooms="Shared">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Hostel room Bangalore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Hostel</span><span>Indiranagar</span></div>
+                            <h3>Premium Shared Hostel with Meals</h3>
+                            <p>₹7,200 / month · 3 Meals, Housekeeping, 24/7 Water</p>
+                            <div class="listing-footer">
+                                <a href="property.html" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹7,200</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Apartment" data-budget="14000" data-rooms="Studio">
+                        <img src="https://images.unsplash.com/photo-1598928506311-7f4cdf9d0f06?auto=format&fit=crop&w=800&q=80" alt="Studio apartment Bangalore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Apartment</span><span>MG Road</span></div>
+                            <h3>Bright Studio Apartment for Professionals</h3>
+                            <p>₹14,000 / month · Furnished, Gym, Power Backup, Parking</p>
+                            <div class="listing-footer">
+                                <a href="property.html" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹14,000</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo footer-logo">Stay<span>Easy</span></a>
+                <p>Find verified rooms, trusted hosts, and flexible stays across Bangalore.</p>
+            </div>
+            <div class="footer-links">
+                <a href="listings.html">Listings</a>
+                <a href="property.html">Property</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fa-solid fa-phone"></i> +91 6300837092</p>
+                <p><i class="fa-solid fa-envelope"></i> support@stayeasy.in</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StayEasy Bangalore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
