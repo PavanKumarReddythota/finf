@@ -546,6 +546,90 @@ const propertyDetails = {
             'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
             'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
         ]
+    },
+    'pg-hebbal-premium': {
+        title: 'Premium single PG near Hebbal Lake.',
+        location: 'Hebbal, Bangalore',
+        price: '₹10,500 / month',
+        type: 'PG',
+        rooms: 'Single',
+        bathroom: 'Attached',
+        utilities: 'Wi-Fi, AC, Housekeeping, Power backup',
+        moveIn: 'Immediate',
+        deposit: '₹10,500',
+        rating: '4.8',
+        owner: 'Maya Desai',
+        description: 'A premium single PG room near Hebbal Lake, offering a quiet lake-facing neighbourhood, AC comfort, and reliable internet for working professionals.',
+        amenities: ['AC room', 'Fast Wi-Fi', 'Housekeeping', 'Laundry', 'Power backup', 'Gated security'],
+        features: ['Lake view', 'Modern interiors', 'Quiet location', 'Flexible lease', 'Near tech parks', 'Secure building'],
+        images: [
+            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'apartment-jp-nagar-2bhk': {
+        title: 'Spacious 2BHK apartment in JP Nagar.',
+        location: 'JP Nagar, Bangalore',
+        price: '₹13,500 / month',
+        type: 'Apartment',
+        rooms: 'Single',
+        bathroom: 'Attached',
+        utilities: 'Kitchenette, Parking, Wi-Fi',
+        moveIn: 'Aug 2026',
+        deposit: '₹13,500',
+        rating: '4.9',
+        owner: 'Anirudh N.',
+        description: 'A spacious 2BHK apartment in JP Nagar with modern amenities, private parking, and high-speed Wi-Fi. Great for a professional couple or small family.',
+        amenities: ['2BHK layout', 'Kitchenette', 'Parking', 'Wi-Fi', 'Power backup', 'Lift access'],
+        features: ['Spacious rooms', 'Quiet neighborhood', 'Family-friendly', 'Near shopping malls', 'Secure building', 'Premium finishes'],
+        images: [
+            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1598928506311-7f4cdf9d0f06?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'hostel-chennai-omr-shared': {
+        title: 'Shared hostel room near Chennai OMR.',
+        location: 'OMR, Chennai',
+        price: '₹6,500 / month',
+        type: 'Hostel',
+        rooms: 'Shared',
+        bathroom: 'Common',
+        utilities: 'Meals, Wi-Fi, Housekeeping',
+        moveIn: 'Immediate',
+        deposit: '₹3,250',
+        rating: '4.6',
+        owner: 'Meena Iyengar',
+        description: 'A friendly shared hostel near OMR, offering meal plans, fast Wi-Fi, and a common lounge for students and young professionals.',
+        amenities: ['Meals included', 'Fast Wi-Fi', 'Shared beds', 'Housekeeping', 'Common lounge', 'Security'],
+        features: ['IT corridor', 'Student-friendly', 'Community living', 'Affordable', 'Secure hostel', 'Cafeteria access'],
+        images: [
+            'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'pg-mysore-fort': {
+        title: 'Single PG room near Mysore Fort.',
+        location: 'Fort, Mysore',
+        price: '₹8,200 / month',
+        type: 'PG',
+        rooms: 'Single',
+        bathroom: 'Attached',
+        utilities: 'Wi-Fi, Laundry, Security',
+        moveIn: 'Immediate',
+        deposit: '₹8,200',
+        rating: '4.6',
+        owner: 'Harini K.',
+        description: 'A comfortable single PG room near Mysore Fort with fast Wi-Fi, laundry services, and friendly housekeeping. Ideal for students and young professionals.',
+        amenities: ['Single room', 'Fast Wi-Fi', 'Laundry', 'Security', 'Attached bathroom', 'Comfortable bedding'],
+        features: ['Historic area', 'Near landmarks', 'Easy commute', 'Affordable', 'Clean rooms', 'Secure entry'],
+        images: [
+            'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1598928506311-7f4cdf9d0f06?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80'
+        ]
     }
 };
 
