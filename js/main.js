@@ -592,6 +592,7 @@ function initializeProperty() {
     setText('propertyUtilities', property.utilities);
     setText('propertyMoveIn', property.moveIn);
     setText('propertyDeposit', property.deposit);
+    setText('propertyLocation', property.location);
     setText('propertyOwnerName', property.owner);
     setText('propertyRating', property.rating);
     setText('propertyDescription', property.description);
