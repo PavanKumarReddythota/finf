@@ -43,10 +43,10 @@
             <div class="container">
                 <div class="page-header reveal">
                     <span class="eyebrow">Listing details</span>
-                    <h1>Cozy single room with attached bathroom and fast Wi-Fi.</h1>
-                    <p>Perfect for students and professionals who need a trusted Bangalore stay with flexible move-in and amenities.</p>
+                    <h1 id="propertyTitle">Cozy single room with attached bathroom and fast Wi-Fi.</h1>
+                    <p id="propertyDescription">Perfect for students and professionals who need a trusted Bangalore stay with flexible move-in and amenities.</p>
                 </div>
-                <div class="property-hero reveal">
+                <div class="property-hero reveal property-page-content">
                     <div class="image-gallery solid-card">
                         <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80" alt="Property main image" class="gallery-main">
                         <div class="gallery-thumbs">
@@ -59,22 +59,33 @@
                         <div class="price-block">
                             <div>
                                 <span class="eyebrow">Rent</span>
-                                <div class="price">₹9,500 / month</div>
+                                <div class="price" id="propertyPrice">₹9,500 / month</div>
                             </div>
                             <div>
                                 <span class="eyebrow">Rooms</span>
-                                <div>Single</div>
+                                <div id="propertyRooms">Single</div>
+                            </div>
+                        </div>
+                        <div class="price-block">
+                            <div>
+                                <span class="eyebrow">Type</span>
+                                <div id="propertyType">PG</div>
+                            </div>
+                            <div>
+                                <span class="eyebrow">Rating</span>
+                                <div id="propertyRating">4.9</div>
                             </div>
                         </div>
                         <div class="property-specs">
-                            <li><strong>Location</strong><span>Koramangala, Bangalore</span></li>
-                            <li><strong>Move-in</strong><span>Immediate</span></li>
-                            <li><strong>Bathroom</strong><span>Attached</span></li>
-                            <li><strong>Utilities</strong><span>Wi-Fi, Laundry, Power Backup</span></li>
+                            <li><strong>Location</strong><span id="propertyLocation">Koramangala, Bangalore</span></li>
+                            <li><strong>Move-in</strong><span id="propertyMoveIn">Immediate</span></li>
+                            <li><strong>Bathroom</strong><span id="propertyBathroom">Attached</span></li>
+                            <li><strong>Utilities</strong><span id="propertyUtilities">Wi-Fi, Laundry, Power Backup</span></li>
+                            <li><strong>Deposit</strong><span id="propertyDeposit">₹9,500</span></li>
                         </div>
                         <div class="sidebar-panel">
                             <h3>Owner details</h3>
-                            <p>Verified owner with 4.9/5 review score and instant response time.</p>
+                            <p><span id="propertyOwnerName">Verified owner with 4.9/5 review score and instant response time.</span></p>
                             <h3>Secure booking</h3>
                             <p>Pay security deposit only after confirming the room inspection.</p>
                         </div>
@@ -82,6 +93,56 @@
                             <button type="submit" class="btn btn-primary">Book this room</button>
                         </form>
                     </aside>
+                </div>
+                <div class="property-details reveal">
+                    <div class="details-grid">
+                        <div class="details-card solid-card">
+                            <h3>What this stay includes</h3>
+                            <ul id="amenitiesList" class="amenities-list">
+                                <li><i class="fa-solid fa-check"></i> Private bed</li>
+                                <li><i class="fa-solid fa-check"></i> 24/7 water</li>
+                                <li><i class="fa-solid fa-check"></i> Fast Wi-Fi</li>
+                                <li><i class="fa-solid fa-check"></i> Laundry service</li>
+                                <li><i class="fa-solid fa-check"></i> Housekeeping</li>
+                            </ul>
+                        </div>
+                        <div class="details-card solid-card">
+                            <h3>Why tenants choose this room</h3>
+                            <ul id="featureList" class="feature-list">
+                                <li><i class="fa-solid fa-star"></i> Verified owner</li>
+                                <li><i class="fa-solid fa-star"></i> Flexible move-in</li>
+                                <li><i class="fa-solid fa-star"></i> In-room storage</li>
+                                <li><i class="fa-solid fa-star"></i> Common lounge</li>
+                                <li><i class="fa-solid fa-star"></i> Nearby metro station</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-grid map-review-grid">
+                        <div class="details-card solid-card map-card">
+                            <h3>Location overview</h3>
+                            <div class="map-placeholder">
+                                <div class="map-pin"><i class="fa-solid fa-location-dot"></i></div>
+                                <p>Koramangala, Bangalore</p>
+                            </div>
+                            <p>Well-connected localities with cafes, coworking spots, colleges, and public transport within walking distance.</p>
+                        </div>
+                        <div class="details-card solid-card review-card">
+                            <h3>Recent reviews</h3>
+                            <div class="review-item">
+                                <p>“Spotless room and fast support from the owner. Very convenient location for college commute.”</p>
+                                <strong>- Priya S.</strong>
+                            </div>
+                            <div class="review-item">
+                                <p>“Booking was easy, and the room matched the listing exactly. Highly recommended for working professionals.”</p>
+                                <strong>- Aditya V.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="propertyNotFound" class="property-notfound solid-card hidden">
+                    <h3>Property not found</h3>
+                    <p>Sorry, the requested listing could not be loaded. Return to the listings page and choose another room.</p>
+                    <a href="listings.html" class="btn btn-primary">Back to listings</a>
                 </div>
             </div>
         </section>

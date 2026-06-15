@@ -49,28 +49,81 @@
 
                 <div class="dashboard-grid reveal">
                     <article class="summary-card solid-card">
-                        <h3>Upcoming stays</h3>
-                        <p>2 confirmed stays in Koramangala and Whitefield with inspection dates scheduled.</p>
+                        <h3><i class="fa-solid fa-calendar-check"></i> Upcoming stays</h3>
+                        <p class="stat-value">3 confirmed</p>
+                        <p>Check inspection dates and move-in schedules below.</p>
                     </article>
                     <article class="summary-card solid-card">
-                        <h3>Pending payments</h3>
-                        <p>₹6,500 due for your room booking in HSR Layout next week.</p>
+                        <h3><i class="fa-solid fa-money-bill"></i> Pending payments</h3>
+                        <p class="stat-value">₹28,200</p>
+                        <p>Deposits and first month rent due before move-in.</p>
                     </article>
                     <article class="summary-card solid-card">
-                        <h3>Saved rooms</h3>
-                        <p>3 rooms saved for quick review when you’re ready to book.</p>
+                        <h3><i class="fa-solid fa-heart"></i> Saved rooms</h3>
+                        <p class="stat-value">7 rooms</p>
+                        <p>Added to your wishlist for future bookings.</p>
                     </article>
                 </div>
 
-                <div class="listing-card-small solid-card reveal">
-                    <h4>Koramangala PG - Single room</h4>
-                    <p>Move-in: 2 Jul 2026 · Rent: ₹9,500 · Deposit: ₹9,500</p>
-                    <button class="btn btn-secondary card-toggle">View updates</button>
-                </div>
-                <div class="listing-card-small solid-card reveal">
-                    <h4>Whitefield Shared Hostel</h4>
-                    <p>Move-in: 12 Jul 2026 · Rent: ₹7,200 · Meals included</p>
-                    <button class="btn btn-secondary card-toggle">View updates</button>
+                <div class="bookings-section reveal">
+                    <h2 style="margin-bottom: 24px; font-size: 1.6rem;">Your bookings</h2>
+                    
+                    <div class="booking-card solid-card expandable-card">
+                        <div class="booking-header">
+                            <div>
+                                <h3>Koramangala PG - Single Room</h3>
+                                <p style="color: var(--muted); margin-bottom: 8px;">₹9,500/month · PG · Bangalore</p>
+                                <div style="display: flex; gap: 18px; font-size: 0.9rem; color: var(--muted);"><span><i class="fa-solid fa-calendar"></i> Move-in: 2 Jul 2026</span><span><i class="fa-solid fa-receipt"></i> Status: Confirmed</span></div>
+                            </div>
+                            <button class="btn btn-secondary card-toggle">Expand</button>
+                        </div>
+                        <div class="booking-details" style="display: none; margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08);"> 
+                            <p><strong>Owner:</strong> Rohan Patel (4.9★)</p>
+                            <p><strong>Location:</strong> Koramangala, Near HSR Layout</p>
+                            <p><strong>Amenities:</strong> Wi-Fi, Laundry, 24/7 Water, Power Backup</p>
+                            <p><strong>Payment:</strong> ₹9,500 (Rent) + ₹9,500 (Deposit) = ₹19,000 total</p>
+                            <p><strong>Inspection:</strong> 1 Jul 2026, 10:00 AM</p>
+                            <button class="btn btn-primary" style="margin-top: 14px;">Confirm booking</button>
+                        </div>
+                    </div>
+
+                    <div class="booking-card solid-card expandable-card">
+                        <div class="booking-header">
+                            <div>
+                                <h3>Whitefield Shared Hostel</h3>
+                                <p style="color: var(--muted); margin-bottom: 8px;">₹7,200/month · Hostel · Bangalore</p>
+                                <div style="display: flex; gap: 18px; font-size: 0.9rem; color: var(--muted);"><span><i class="fa-solid fa-calendar"></i> Move-in: 12 Jul 2026</span><span><i class="fa-solid fa-receipt"></i> Status: Pending</span></div>
+                            </div>
+                            <button class="btn btn-secondary card-toggle">Expand</button>
+                        </div>
+                        <div class="booking-details" style="display: none; margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08);"> 
+                            <p><strong>Owner:</strong> Nisha Verma (4.8★)</p>
+                            <p><strong>Location:</strong> Whitefield, Tech Park Area</p>
+                            <p><strong>Amenities:</strong> Meals (3x), Wi-Fi, Housekeeping, Common Lounge</p>
+                            <p><strong>Payment:</strong> ₹7,200 (Rent) + ₹3,600 (Deposit) = ₹10,800 total</p>
+                            <p><strong>Inspection:</strong> 10 Jul 2026, 3:00 PM</p>
+                            <button class="btn btn-primary" style="margin-top: 14px;">Pay deposit</button>
+                        </div>
+                    </div>
+
+                    <div class="booking-card solid-card expandable-card">
+                        <div class="booking-header">
+                            <div>
+                                <h3>Indiranagar Studio Apartment</h3>
+                                <p style="color: var(--muted); margin-bottom: 8px;">₹15,000/month · Apartment · Bangalore</p>
+                                <div style="display: flex; gap: 18px; font-size: 0.9rem; color: var(--muted);"><span><i class="fa-solid fa-calendar"></i> Move-in: 18 Jul 2026</span><span><i class="fa-solid fa-receipt"></i> Status: Processing</span></div>
+                            </div>
+                            <button class="btn btn-secondary card-toggle">Expand</button>
+                        </div>
+                        <div class="booking-details" style="display: none; margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08);"> 
+                            <p><strong>Owner:</strong> Anjali Rao (4.7★)</p>
+                            <p><strong>Location:</strong> Indiranagar, MG Road nearby</p>
+                            <p><strong>Amenities:</strong> AC, Kitchenette, Gym, Parking, Premium finishes</p>
+                            <p><strong>Payment:</strong> ₹15,000 (Rent) + ₹15,000 (Deposit) = ₹30,000 total</p>
+                            <p><strong>Inspection:</strong> 16 Jul 2026, 11:00 AM</p>
+                            <button class="btn btn-primary" style="margin-top: 14px;">View property</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

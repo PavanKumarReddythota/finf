@@ -51,6 +51,7 @@
                         <div class="filter-group">
                             <label for="filterCity">City</label>
                             <select id="filterCity" name="city">
+                                <option value="Any">Any</option>
                                 <option value="Bangalore">Bangalore</option>
                                 <option value="Mysore">Mysore</option>
                                 <option value="Chennai">Chennai</option>
@@ -84,46 +85,241 @@
                             </select>
                         </div>
                         <div class="filter-actions">
-                            <button type="submit" class="btn btn-primary">Apply Filters</button>
+                            <button type="button" id="applyFilters" class="btn btn-primary">Apply Filters</button>
                             <button type="button" id="resetFilters" class="btn btn-secondary">Reset</button>
                         </div>
                     </form>
                 </div>
+                <div id="filterSummary" class="filter-summary reveal" style="margin-top: 18px; color: #cbd5e1; font-size: 0.96rem;">
+                    Loading rooms...
+                </div>
 
                 <div class="listing-grid reveal">
-                    <article class="listing-card solid-card" data-city="Bangalore" data-type="PG" data-budget="9500" data-rooms="Single">
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="PG" data-budget="9500" data-rooms="Single" data-property="cozy-koramangala">
                         <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt="PG room in Bangalore">
                         <div class="listing-body">
                             <div class="listing-meta"><span>PG</span><span>Koramangala</span></div>
                             <h3>Cozy Single Room near HSR Layout</h3>
                             <p>₹9,500 / month · Wi-Fi, Attached Bathroom, Laundry, Security</p>
                             <div class="listing-footer">
-                                <a href="property.html" class="btn btn-secondary">View Details</a>
+                                <a href="property.html?property=cozy-koramangala" class="btn btn-secondary">View Details</a>
                                 <span class="price">₹9,500</span>
                             </div>
                         </div>
                     </article>
-                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Hostel" data-budget="7200" data-rooms="Shared">
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Hostel" data-budget="7200" data-rooms="Shared" data-property="premium-shared-hostel">
                         <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Hostel room Bangalore">
                         <div class="listing-body">
                             <div class="listing-meta"><span>Hostel</span><span>Indiranagar</span></div>
                             <h3>Premium Shared Hostel with Meals</h3>
                             <p>₹7,200 / month · 3 Meals, Housekeeping, 24/7 Water</p>
                             <div class="listing-footer">
-                                <a href="property.html" class="btn btn-secondary">View Details</a>
+                                <a href="property.html?property=premium-shared-hostel" class="btn btn-secondary">View Details</a>
                                 <span class="price">₹7,200</span>
                             </div>
                         </div>
                     </article>
-                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Apartment" data-budget="14000" data-rooms="Studio">
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Apartment" data-budget="14000" data-rooms="Studio" data-property="bright-studio-apartment">
                         <img src="https://images.unsplash.com/photo-1598928506311-7f4cdf9d0f06?auto=format&fit=crop&w=800&q=80" alt="Studio apartment Bangalore">
                         <div class="listing-body">
                             <div class="listing-meta"><span>Apartment</span><span>MG Road</span></div>
                             <h3>Bright Studio Apartment for Professionals</h3>
                             <p>₹14,000 / month · Furnished, Gym, Power Backup, Parking</p>
                             <div class="listing-footer">
-                                <a href="property.html" class="btn btn-secondary">View Details</a>
+                                <a href="property.html?property=bright-studio-apartment" class="btn btn-secondary">View Details</a>
                                 <span class="price">₹14,000</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Hostel" data-budget="8200" data-rooms="Single" data-property="single-hostel-electronic-city">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Single hostel room Bangalore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Hostel</span><span>Electronic City</span></div>
+                            <h3>Single Hostel Room with Meals Included</h3>
+                            <p>₹8,200 / month · Single bed, Meals, Wi-Fi, Laundry</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=single-hostel-electronic-city" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹8,200</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Hostel" data-budget="10400" data-rooms="Single" data-property="private-hostel-hsr">
+                        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80" alt="Private hostel room Bangalore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Hostel</span><span>HSR Layout</span></div>
+                            <h3>Private Single Hostel Room near HSR</h3>
+                            <p>₹10,400 / month · Single bed, AC, Meals, Housekeeping</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=private-hostel-hsr" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹10,400</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="PG" data-budget="9800" data-rooms="Single" data-property="fast-wifi-pg">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Single PG room Bangalore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>Marathahalli</span></div>
+                            <h3>Single PG Room with Fast Wi-Fi</h3>
+                            <p>₹9,800 / month · Single occupancy, Wi-Fi, Laundry, Security</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=fast-wifi-pg" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹9,800</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="PG" data-budget="8800" data-rooms="Shared" data-property="shared-pg-koramangala">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Shared PG room Bangalore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>Koramangala</span></div>
+                            <h3>Shared PG with 24/7 Water and Wi-Fi</h3>
+                            <p>₹8,800 / month · Shared room, Meals optional, Housekeeping</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=shared-pg-koramangala" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹8,800</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Apartment" data-budget="12500" data-rooms="Single" data-property="private-apartment-jayanagar">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt="Private apartment Bangalore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Apartment</span><span>Jayanagar</span></div>
+                            <h3>Private Single Bedroom Apartment</h3>
+                            <p>₹12,500 / month · Furnished, Kitchenette, Parking</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=private-apartment-jayanagar" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹12,500</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Mysore" data-type="PG" data-budget="9000" data-rooms="Shared" data-property="mysore-pg-vijayanagar">
+                        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="PG room Mysore">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>Vijayanagar</span></div>
+                            <h3>Shared PG near Mysore University</h3>
+                            <p>₹9,000 / month · Twin sharing, Housekeeping, Wi-Fi</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=mysore-pg-vijayanagar" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹9,000</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Chennai" data-type="Apartment" data-budget="12000" data-rooms="Single" data-property="chennai-anna-nagar-apartment">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80" alt="Single apartment Chennai">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Apartment</span><span>Anna Nagar</span></div>
+                            <h3>Single Room Apartment with Private Kitchen</h3>
+                            <p>₹12,000 / month · Furnished, Kitchen, Parking, Security</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=chennai-anna-nagar-apartment" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹12,000</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="PG" data-budget="7500" data-rooms="Single" data-property="pg-whitefield-new">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="PG Whitefield">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>Whitefield</span></div>
+                            <h3>Budget Single Room near Tech Park</h3>
+                            <p>₹7,500 / month · Wi-Fi, Shared Kitchen, Security Guard</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=pg-whitefield-new" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹7,500</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Hostel" data-budget="6500" data-rooms="Shared" data-property="hostel-btm-shared">
+                        <img src="https://images.unsplash.com/photo-1555854518-8c19b42c0dae?auto=format&fit=crop&w=800&q=80" alt="Hostel BTM">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Hostel</span><span>BTM Layout</span></div>
+                            <h3>Budget Shared Hostel with Community Space</h3>
+                            <p>₹6,500 / month · Twin bed, Common lounge, Wi-Fi, Meals</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=hostel-btm-shared" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹6,500</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Apartment" data-budget="11000" data-rooms="Single" data-property="apartment-domlur-single">
+                        <img src="https://images.unsplash.com/photo-1540932239986-310128078ceb?auto=format&fit=crop&w=800&q=80" alt="Domlur Apartment">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Apartment</span><span>Domlur</span></div>
+                            <h3>Modern Single BHK Apartment</h3>
+                            <p>₹11,000 / month · Furnished, Gym, Parking, 24/7 Water</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=apartment-domlur-single" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹11,000</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Pune" data-type="PG" data-budget="8000" data-rooms="Single" data-property="pg-pune-kalyani">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Pune PG">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>Kalyani Nagar</span></div>
+                            <h3>Premium Single PG in Pune</h3>
+                            <p>₹8,000 / month · AC, Fast Wi-Fi, Laundry, Security</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=pg-pune-kalyani" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹8,000</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="PG" data-budget="9200" data-rooms="Shared" data-property="pg-indiranagar-twin">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Indiranagar PG">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>Indiranagar</span></div>
+                            <h3>Twin-Sharing PG with Meals & Laundry</h3>
+                            <p>₹9,200 / month · 2 Beds, Meals, Laundry, 24/7 Water</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=pg-indiranagar-twin" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹9,200</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Mysore" data-type="Hostel" data-budget="5500" data-rooms="Shared" data-property="hostel-mysore-budget">
+                        <img src="https://images.unsplash.com/photo-1555854518-8c19b42c0dae?auto=format&fit=crop&w=800&q=80" alt="Mysore Hostel">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Hostel</span><span>Mysore City</span></div>
+                            <h3>Budget Dorm Beds near Mysore Palace</h3>
+                            <p>₹5,500 / month · Shared beds, Common kitchen, Wi-Fi</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=hostel-mysore-budget" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹5,500</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Chennai" data-type="PG" data-budget="7800" data-rooms="Single" data-property="pg-chennai-omr">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Chennai PG">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>OMR, Chennai</span></div>
+                            <h3>Single Room PG near IT Parks</h3>
+                            <p>₹7,800 / month · AC, Meals available, Laundry, Security</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=pg-chennai-omr" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹7,800</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="Apartment" data-budget="15000" data-rooms="Studio" data-property="apartment-indiranagar-studio">
+                        <img src="https://images.unsplash.com/photo-1598928506311-7f4cdf9d0f06?auto=format&fit=crop&w=800&q=80" alt="Indiranagar Studio">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>Apartment</span><span>Indiranagar</span></div>
+                            <h3>Luxury Studio Apartment with Balcony</h3>
+                            <p>₹15,000 / month · Kitchenette, Gym, Parking, Premium finishes</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=apartment-indiranagar-studio" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹15,000</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="listing-card solid-card" data-city="Bangalore" data-type="PG" data-budget="10000" data-rooms="Single" data-property="pg-jayanagar-premium">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Jayanagar PG">
+                        <div class="listing-body">
+                            <div class="listing-meta"><span>PG</span><span>Jayanagar</span></div>
+                            <h3>Premium Single PG with Attached Bathroom</h3>
+                            <p>₹10,000 / month · AC, Attached bath, Meals, Laundry</p>
+                            <div class="listing-footer">
+                                <a href="property.html?property=pg-jayanagar-premium" class="btn btn-secondary">View Details</a>
+                                <span class="price">₹10,000</span>
                             </div>
                         </div>
                     </article>

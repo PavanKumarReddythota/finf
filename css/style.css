@@ -27,9 +27,22 @@ html {
 
 body {
     font-family: var(--font-body);
-    background: var(--bg-color);
+    background: radial-gradient(circle at top left, rgba(0,210,255,0.1), transparent 32%),
+                radial-gradient(circle at bottom right, rgba(108,92,231,0.15), transparent 28%),
+                var(--bg-color);
     color: var(--text);
     min-height: 100%;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(0,210,255,0.08), transparent 18%),
+                      radial-gradient(circle at 85% 15%, rgba(255,255,255,0.03), transparent 16%),
+                      radial-gradient(circle at 75% 85%, rgba(108,92,231,0.05), transparent 20%);
+    pointer-events: none;
 }
 
 a {
@@ -224,30 +237,45 @@ p {
     color: var(--muted);
 }
 
-.field-group select,
-.field-group input,
-.field-group textarea {
-    width: 100%;
-    border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.08);
-    padding: 14px 16px;
-    background: rgba(255,255,255,0.04);
-    color: #fff;
-}
+    .field-group {
+        position: relative;
+    }
 
-.field-group select {
-    appearance: none;
-}
+    .field-group select,
+    .field-group input,
+    .field-group textarea {
+        width: 100%;
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.08);
+        padding: 14px 16px;
+        background: rgba(255,255,255,0.06);
+        color: #fff;
+    }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(5, 10, 21, 0.92);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-}
+    .field-group select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding-right: 40px;
+        background: rgba(255,255,255,0.08);
+        color: #fff;
+    }
+
+    .field-group::after {
+        content: '\25BE';
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: var(--muted);
+        font-size: 0.9rem;
+    }
+
+    .field-group select option {
+        background: #0c1628;
+        color: #fff;
+    }
 
 .nav-container {
     max-width: 1200px;
@@ -541,6 +569,15 @@ p {
     flex-wrap: wrap;
 }
 
+.filter-summary {
+    padding: 14px 18px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #cbd5e1;
+    margin-top: 18px;
+}
+
 .property-hero {
     display: grid;
     grid-template-columns: 1.45fr 0.9fr;
@@ -588,6 +625,9 @@ p {
 .property-specs {
     display: grid;
     gap: 14px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .property-specs li {
@@ -602,6 +642,110 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.property-details {
+    margin-top: 36px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.details-card {
+    padding: 28px;
+}
+
+.details-card h3 {
+    margin-bottom: 20px;
+}
+
+.map-review-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.map-card,
+.review-card {
+    padding: 28px;
+}
+
+.map-placeholder {
+    min-height: 220px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 32px 18px;
+    color: var(--muted);
+    position: relative;
+}
+
+.map-pin {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(0,210,255,0.14);
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px;
+    color: var(--primary);
+    font-size: 1.6rem;
+}
+
+.review-item {
+    margin-bottom: 18px;
+    color: var(--muted);
+}
+
+.review-item strong {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.amenities-list,
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.amenities-list li,
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--muted);
+}
+
+.amenities-list li i,
+.feature-list li i {
+    color: var(--primary);
+    min-width: 20px;
+}
+
+.property-notfound {
+    padding: 32px;
+    text-align: center;
+}
+
+.property-notfound h3 {
+    margin-bottom: 18px;
+}
+
+.property-notfound p {
+    color: var(--muted);
+    margin-bottom: 24px;
 }
 
 .price-block .price {
@@ -734,6 +878,56 @@ p {
     }
 }
 
+/* Dashboard styles */
+.bookings-section {
+    margin-top: 40px;
+}
+
+.booking-card {
+    padding: 28px;
+    margin-bottom: 20px;
+}
+
+.booking-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.booking-details p {
+    margin-bottom: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.booking-details strong {
+    color: #fff;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.summary-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.summary-card h3 i {
+    color: var(--primary);
+}
+
 @media (max-width: 640px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -746,5 +940,12 @@ p {
     }
     .footer-grid {
         gap: 20px;
+    }
+    .booking-header {
+        flex-direction: column;
+    }
+    .booking-header button {
+        align-self: flex-start;
+        margin-top: 12px;
     }
 }
