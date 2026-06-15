@@ -357,6 +357,195 @@ const propertyDetails = {
             'https://images.unsplash.com/photo-1598928506311-7f4cdf9d0f06?auto=format&fit=crop&w=1200&q=80',
             'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80'
         ]
+    },
+    'pg-whitefield-new': {
+        title: 'Modern PG room in Whitefield tech hub.',
+        location: 'Whitefield, Bangalore',
+        price: '₹7,500 / month',
+        type: 'PG',
+        rooms: 'Single',
+        bathroom: 'Attached',
+        utilities: 'Wi-Fi, AC, Housekeeping',
+        moveIn: 'Immediate',
+        deposit: '₹7,500',
+        rating: '4.8',
+        owner: 'Vikram Singh',
+        description: 'A modern, well-furnished single room in Whitefield with AC and high-speed internet. Perfect for IT professionals with easy commute to tech parks.',
+        amenities: ['AC room', 'Fast Wi-Fi', 'Single occupancy', 'Housekeeping', 'Power backup', 'Study table'],
+        features: ['Tech hub location', 'Near office parks', 'Modern amenities', 'Secure building', 'Flexible lease', 'Easy metro access'],
+        images: [
+            'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'hostel-btm-shared': {
+        title: 'Budget-friendly shared hostel in BTM Layout.',
+        location: 'BTM Layout, Bangalore',
+        price: '₹6,500 / month',
+        type: 'Hostel',
+        rooms: 'Shared',
+        bathroom: 'Common',
+        utilities: 'Meals, Wi-Fi, Laundry',
+        moveIn: 'Immediate',
+        deposit: '₹3,250',
+        rating: '4.6',
+        owner: 'Keerthana M.',
+        description: 'An affordable shared hostel room with meals included and a vibrant community. Great for students and backpackers looking for budget stays near South Bangalore.',
+        amenities: ['Shared room', 'Meals included', 'Wi-Fi', 'Common lounge', 'Laundry', 'Security'],
+        features: ['Budget hostel', 'South Bangalore', 'Community vibe', 'Meals included', 'Safe environment', 'Social space'],
+        images: [
+            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'apartment-domlur-single': {
+        title: 'Premium single bedroom apartment in Domlur.',
+        location: 'Domlur, Bangalore',
+        price: '₹11,000 / month',
+        type: 'Apartment',
+        rooms: 'Single',
+        bathroom: 'Attached',
+        utilities: 'Kitchenette, Parking, AC',
+        moveIn: 'Jul 2026',
+        deposit: '₹11,000',
+        rating: '4.8',
+        owner: 'Rahul Kapoor',
+        description: 'A premium single apartment with kitchenette and AC in a well-maintained building. Located in Domlur, close to restaurants, cafes, and shopping centers.',
+        amenities: ['AC room', 'Kitchenette', 'Parking', 'Power backup', 'Security', 'Housekeeping'],
+        features: ['Premium location', 'Modern building', 'Spacious room', 'Good commute', 'Safe area', 'Well-furnished'],
+        images: [
+            'https://images.unsplash.com/photo-1598928506311-7f4cdf9d0f06?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'pg-pune-kalyani': {
+        title: 'Cozy PG room in Pune\'s Kalyani Nagar.',
+        location: 'Kalyani Nagar, Pune',
+        price: '₹8,000 / month',
+        type: 'PG',
+        rooms: 'Single',
+        bathroom: 'Attached',
+        utilities: 'Wi-Fi, Laundry, Security',
+        moveIn: 'Immediate',
+        deposit: '₹8,000',
+        rating: '4.7',
+        owner: 'Amita Joshi',
+        description: 'A comfortable single PG room in Pune\'s vibrant Kalyani Nagar locality. Close to restaurants, shopping, and entertainment with reliable internet and housekeeping.',
+        amenities: ['Single room', 'Fast Wi-Fi', 'Attached bathroom', 'Laundry', 'Power backup', 'Security'],
+        features: ['Pune location', 'Vibrant area', 'Near cafes', 'Student-friendly', 'Flexible lease', 'Secure building'],
+        images: [
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'pg-indiranagar-twin': {
+        title: 'Spacious twin-bed PG room in Indiranagar.',
+        location: 'Indiranagar, Bangalore',
+        price: '₹9,200 / month',
+        type: 'PG',
+        rooms: 'Shared',
+        bathroom: 'Attached',
+        utilities: 'Wi-Fi, AC, Housekeeping',
+        moveIn: 'Immediate',
+        deposit: '₹9,200',
+        rating: '4.7',
+        owner: 'Soundarya R.',
+        description: 'A spacious shared PG room with twin beds and AC in Indiranagar. Perfect for two people or a couple with modern amenities and a friendly environment.',
+        amenities: ['Twin beds', 'AC room', 'Attached bathroom', 'Wi-Fi', 'Laundry', 'Housekeeping'],
+        features: ['Spacious room', 'AC included', 'Near metro', 'Good locality', 'Flexible sharing', 'Modern amenities'],
+        images: [
+            'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'hostel-mysore-budget': {
+        title: 'Budget hostel in Mysore city center.',
+        location: 'Mysore City, Mysore',
+        price: '₹5,500 / month',
+        type: 'Hostel',
+        rooms: 'Shared',
+        bathroom: 'Common',
+        utilities: 'Meals, Wi-Fi, Housekeeping',
+        moveIn: 'Immediate',
+        deposit: '₹2,750',
+        rating: '4.5',
+        owner: 'Ravi Kumar',
+        description: 'An ultra-budget hostel with shared rooms, meals, and a welcoming community. Perfect for travelers, students, and those exploring Mysore on a budget.',
+        amenities: ['Shared room', 'Meals included', 'Wi-Fi', 'Common area', 'Housekeeping', 'Security'],
+        features: ['Ultra-budget', 'City center', 'Tourist-friendly', 'Meals included', 'Community space', 'Clean rooms'],
+        images: [
+            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'pg-chennai-omr': {
+        title: 'IT-professional friendly PG on Chennai OMR.',
+        location: 'OMR, Chennai',
+        price: '₹7,800 / month',
+        type: 'PG',
+        rooms: 'Single',
+        bathroom: 'Attached',
+        utilities: 'Wi-Fi, AC, Housekeeping',
+        moveIn: 'Immediate',
+        deposit: '₹7,800',
+        rating: '4.8',
+        owner: 'Nagesh V.',
+        description: 'A modern single PG room on OMR (Old Mahabalipuram Road) with AC and fiber internet. Ideal for IT professionals working in nearby tech parks and companies.',
+        amenities: ['AC room', 'Fiber Wi-Fi', 'Single occupancy', 'Housekeeping', 'Power backup', 'Study area'],
+        features: ['IT hub location', 'Near tech parks', 'AC included', 'Reliable internet', 'Secure area', 'Flexible lease'],
+        images: [
+            'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'apartment-indiranagar-studio': {
+        title: 'Premium studio apartment in Indiranagar.',
+        location: 'Indiranagar, Bangalore',
+        price: '₹15,000 / month',
+        type: 'Apartment',
+        rooms: 'Studio',
+        bathroom: 'Attached',
+        utilities: 'AC, Gym, Parking, Premium',
+        moveIn: 'Aug 2026',
+        deposit: '₹15,000',
+        rating: '4.9',
+        owner: 'Priya Saxena',
+        description: 'A luxury studio apartment with premium finishes, gym access, and dedicated parking. Located in upscale Indiranagar with easy access to restaurants and metro.',
+        amenities: ['AC studio', 'Gym access', 'Parking', 'Modern kitchen', 'Power backup', 'Security'],
+        features: ['Premium building', 'Luxury finishes', 'Gym facility', 'Safe parking', 'Metro nearby', 'Well-connected'],
+        images: [
+            'https://images.unsplash.com/photo-1598928506311-7f4cdf9d0f06?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80'
+        ]
+    },
+    'pg-jayanagar-premium': {
+        title: 'Premium PG room with all amenities in Jayanagar.',
+        location: 'Jayanagar, Bangalore',
+        price: '₹10,000 / month',
+        type: 'PG',
+        rooms: 'Single',
+        bathroom: 'Attached',
+        utilities: 'AC, Wi-Fi, Laundry, Premium',
+        moveIn: 'Jul 2026',
+        deposit: '₹10,000',
+        rating: '4.8',
+        owner: 'Sanjay Reddy',
+        description: 'A premium single PG room with AC, fast Wi-Fi, and premium amenities in South Bangalore\'s Jayanagar. Perfect for professionals seeking comfort and security.',
+        amenities: ['AC room', 'Premium Wi-Fi', 'Single occupancy', 'Laundry', 'Housekeeping', 'Common lounge'],
+        features: ['South Bangalore', 'Premium PG', 'AC included', 'Quality amenities', 'Quiet area', 'Well-maintained'],
+        images: [
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
+        ]
     }
 };
 
